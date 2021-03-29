@@ -28,6 +28,7 @@ public class Form extends javax.swing.JFrame {
     private void initComponents() {
 
         btnkati = new javax.swing.JButton();
+        btnPeti = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         mnuPeter = new javax.swing.JMenuItem();
@@ -35,10 +36,17 @@ public class Form extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnkati.setText("jButton1");
+        btnkati.setText("Kati Gomb");
         btnkati.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnkatiActionPerformed(evt);
+            }
+        });
+
+        btnPeti.setText("Peti Gomb");
+        btnPeti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPetiActionPerformed(evt);
             }
         });
 
@@ -71,13 +79,17 @@ public class Form extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(btnkati)
-                .addContainerGap(319, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btnPeti)
+                .addContainerGap(212, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(btnkati)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnkati)
+                    .addComponent(btnPeti))
                 .addContainerGap(237, Short.MAX_VALUE))
         );
 
@@ -97,8 +109,12 @@ public class Form extends javax.swing.JFrame {
 
     private void btnkatiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkatiActionPerformed
         // TODO add your handling code here:
-        setTitle("Katalin Gomb");
+        setTitle("Katalin-gomb");
     }//GEN-LAST:event_btnkatiActionPerformed
+
+    private void btnPetiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPetiActionPerformed
+        setTitle("Péter-gomb");
+    }//GEN-LAST:event_btnPetiActionPerformed
 
 
     /**
@@ -137,6 +153,7 @@ public class Form extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnPeti;
     private javax.swing.JButton btnkati;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
