@@ -40,6 +40,11 @@ public class Form extends javax.swing.JFrame {
         jMenu1.add(mnuPeter);
 
         mnuKati.setText("Kati");
+        mnuKati.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuKatiActionPerformed(evt);
+            }
+        });
         jMenu1.add(mnuKati);
 
         jMenuBar1.add(jMenu1);
@@ -59,6 +64,11 @@ public class Form extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mnuKatiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuKatiActionPerformed
+//        Okosan beírom azt hogy
+        setTitle("Katalin");
+    }//GEN-LAST:event_mnuKatiActionPerformed
 
     /**
      * @param args the command line arguments
