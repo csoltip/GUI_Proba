@@ -37,6 +37,11 @@ public class Form extends javax.swing.JFrame {
         jMenu1.setText("File");
 
         mnuPeter.setText("Péter");
+        mnuPeter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuPeterActionPerformed(evt);
+            }
+        });
         jMenu1.add(mnuPeter);
 
         mnuKati.setText("Kati");
@@ -59,6 +64,10 @@ public class Form extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mnuPeterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuPeterActionPerformed
+        setTitle("Péter");
+    }//GEN-LAST:event_mnuPeterActionPerformed
 
     /**
      * @param args the command line arguments
