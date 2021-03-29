@@ -39,14 +39,14 @@ public class Form extends javax.swing.JFrame {
         btnkati.setText("Kati Gomb");
         btnkati.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnkatiActionPerformed(evt);
+                nevGombKlikk(evt);
             }
         });
 
         btnPeti.setText("Peti Gomb");
         btnPeti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPetiActionPerformed(evt);
+                nevGombKlikk(evt);
             }
         });
 
@@ -107,14 +107,9 @@ public class Form extends javax.swing.JFrame {
         setTitle("Katalin");
     }//GEN-LAST:event_mnuKatiActionPerformed
 
-    private void btnkatiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkatiActionPerformed
-        // TODO add your handling code here:
-        setTitle("Katalin-gomb");
-    }//GEN-LAST:event_btnkatiActionPerformed
-
-    private void btnPetiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPetiActionPerformed
-        setTitle("Péter-gomb");
-    }//GEN-LAST:event_btnPetiActionPerformed
+    private void nevGombKlikk(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nevGombKlikk
+        setTitle(evt.getActionCommand());
+    }//GEN-LAST:event_nevGombKlikk
 
 
     /**

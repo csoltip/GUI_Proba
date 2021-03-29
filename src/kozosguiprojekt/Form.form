@@ -81,7 +81,7 @@
         <Property name="text" type="java.lang.String" value="Kati Gomb"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnkatiActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nevGombKlikk"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnPeti">
@@ -89,7 +89,7 @@
         <Property name="text" type="java.lang.String" value="Peti Gomb"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPetiActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nevGombKlikk"/>
       </Events>
     </Component>
   </SubComponents>
