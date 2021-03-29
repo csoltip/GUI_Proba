@@ -27,12 +27,20 @@ public class Form extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnkati = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         mnuPeter = new javax.swing.JMenuItem();
         mnuKati = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        btnkati.setText("jButton1");
+        btnkati.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkatiActionPerformed(evt);
+            }
+        });
 
         jMenu1.setText("File");
 
@@ -60,11 +68,17 @@ public class Form extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnkati)
+                .addContainerGap(319, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(btnkati)
+                .addContainerGap(237, Short.MAX_VALUE))
         );
 
         pack();
@@ -80,6 +94,11 @@ public class Form extends javax.swing.JFrame {
 /* Csak be kellett volna fejezni, nem? */
         setTitle("Katalin");
     }//GEN-LAST:event_mnuKatiActionPerformed
+
+    private void btnkatiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkatiActionPerformed
+        // TODO add your handling code here:
+        setTitle("Katalin Gomb");
+    }//GEN-LAST:event_btnkatiActionPerformed
 
 
     /**
@@ -118,6 +137,7 @@ public class Form extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnkati;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem mnuKati;
